@@ -23,6 +23,10 @@ module.exports = {
           "css-loader",
           "sass-loader",
         ]
+      },
+      {
+        test: /\.pdf$/,
+        type: "asset/resource",
       }
     ]
   },
@@ -30,5 +34,6 @@ module.exports = {
     filename: 'index.[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
+    assetModuleFilename: '[name][ext][query]'
   },
 };
