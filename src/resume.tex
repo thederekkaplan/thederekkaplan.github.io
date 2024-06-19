@@ -1,0 +1,58 @@
+% !TEX TS-program = lualatex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{titlesec}
+% smallcaps
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[normalem]{ulem}
+\usepackage{hyperref}
+\usepackage{luapackageloader}
+
+\titleformat{\section}{\large\scshape\bfseries}{}{}{}[\titlerule]
+\titlespacing{\section}{0pt}{0pt}{5pt}
+
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=2em}
+
+\newcommand{\activity}[4]{\noindent\textbf{#1\hfill#2}\\\textit{#3\hfill#4}}
+\newcommand{\activitytitle}[2]{\noindent\textbf{#1\hfill#2}}
+\newcommand{\subactivity}[2]{\noindent\textit{#1\hfill#2}}
+\newcommand{\linespace}{\vspace{0.4em}}
+
+\hypersetup{colorlinks,urlcolor=blue}
+\makeatletter
+\DeclareUrlCommand\ULurl@@{% <-- add this to remove space before url
+    \def\UrlFont{\color{blue}}%
+    \def\UrlLeft{\uline\bgroup}%
+    \def\UrlRight{\egroup}}
+\def\ULurl@#1{\hyper@linkurl{\ULurl@@{#1}}{#1}}
+\DeclareRobustCommand*\ULurl{\ULurl@}
+\makeatother
+
+\pagestyle{empty}
+
+\directlua{resume = require("src/resume")}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Large\directlua{tex.tprint {-2, resume.name}}}\\
+\directlua{tex.tprint {-2, resume.location}}\ \textbullet\ \directlua{tex.tprint {-2, resume.phone}}\ \textbullet\ \directlua{tex.tprint {-2, resume.email}}\\
+\directlua{tex.tprint({"\\ULurl{"}, {-2, resume.linkedin}, {"}"})}
+\end{center}
+
+\section*{Education}
+\directlua{resume.print_education(tex.tprint)}
+
+\section*{Technical Skills}
+\directlua{resume.print_skills(tex.tprint)}
+
+\section*{Experience}
+\directlua{resume.print_experience(tex.tprint)}
+
+\section*{Software Projects}
+\directlua{resume.print_projects(tex.tprint)}
+
+\end{document}

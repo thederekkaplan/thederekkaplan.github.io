@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="index.css">
+	<%
+		var mailto = "&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x25;&#x37;&#x34;&#x25;&#x36;&#x38;&#x25;&#x36;&#x35;&#x25;&#x36;&#x34;&#x25;&#x36;&#x35;&#x25;&#x37;&#x32;&#x25;&#x36;&#x35;&#x25;&#x36;&#x42;&#x25;&#x36;&#x42;&#x25;&#x36;&#x31;&#x25;&#x37;&#x30;&#x25;&#x36;&#x43;&#x25;&#x36;&#x31;&#x25;&#x36;&#x45;&#x25;&#x34;&#x30;&#x25;&#x37;&#x30;&#x25;&#x37;&#x32;&#x25;&#x36;&#x46;&#x25;&#x37;&#x34;&#x25;&#x36;&#x46;&#x25;&#x36;&#x45;&#x25;&#x32;&#x45;&#x25;&#x36;&#x44;&#x25;&#x36;&#x35;"
+	%>
+	<title><%= resume.name %></title>
+</head>
+<body>
+	<main>
+		<h1>Hi.</h1>
+		<h2>I'm Derek.</h2>
+		<p>I write code, and occasionally I do other stuff too.</p>
+		<!--Email encoded with HTML entities to fool bots-->
+		<p><a href="<%- mailto %>">Get in touch</a></p>
+		<div class="container">
+			<% for (const v of resume.projects) { %>
+				<div class="card">
+					<h3><%= v.title %></h3>
+					<p><% for (const tech of v.technologies) { %>
+						<span class="badge"><%= tech %></span>
+					<% } %></p>
+					<ul>
+						<% for (const desc of v.description) { %>
+							<li class="list-group-item"><%= desc %></li>
+						<% } %>
+					</ul>
+					<div class="spacer"></div>
+					<a href="<%- v.url ? v.url : mailto %>" class="btn">
+						<%= v.url ? "View code" : "Code available upon request" %>
+					</a>
+					<div class="card-footer">
+						<%= v.date %>
+					</div>
+				</div>
+			<% } %>
+		</div>
+	</main>
+</body>
+</html>

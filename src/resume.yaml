@@ -1,0 +1,111 @@
+name: "Derek A. Kaplan"
+location: "Boston, MA"
+phone: "(814) 660-2739"
+email: "thederekkaplan@proton.me"
+linkedin: "https://www.linkedin.com/in/thederekkaplan/"
+education:
+  - school: "Northeastern University"
+    location: "Boston, MA"
+    degree: "Bachelor of Science in Computer Science"
+    graduation: "Anticipated Graduation May 2025"
+    description:
+      - "GPA: 3.963/4.000"
+      - "Awards: University Honors Program; Dean's List (all semesters); Northeastern National Merit Scholar"
+      - "Minors: Economics, Computational Social Science"
+      - "Relevant coursework: Software Development, Programming Languages, Machine Learning & Data Mining, Algorithms"
+skills:
+  - category: "Programming Languages"
+    skills:
+      - "Kotlin"
+      - "Java"
+      - "Python"
+      - "TypeScript"
+      - "JavaScript"
+  - category: "Technologies"
+    skills:
+      - "SQL"
+      - "GraphQL"
+      - "Docker"
+      - "Hadoop"
+      - "Kubernetes"
+      - "Kafka"
+experience:
+  - company: "Bitsight"
+    location: "Boston, MA"
+    positions:
+      - title: "Software Engineering Co-op — Big Data"
+        dates:
+          - start: "January 2024"
+            end: "June 2024"
+        description:
+          - "Developed and maintained Hadoop data pipeline for processing and analyzing security data."
+          - "Updated grading protocol for cybersecurity ratings, improving accuracy and consistency of scores."
+          - "Led implementation of internationalization initiative, enabling global customers to use platform in their native language."
+  - company: "Northeastern University"
+    location: "Boston, MA"
+    positions:
+      - title: "Lead Teaching Assistant — Object-Oriented Design"
+        dates:
+          - start: "September 2023"
+            end: "December 2023"
+        description:
+          - "Supervised team of 4 teaching assistants, maintaining consistent grading standards."
+          - "Assisted in developing assignments, ensuring they were challenging yet manageable for students."
+          - "Held 4 weekly office hours to provide individualized support and assistance to students."
+          - "Facilitated weekly labs, guiding students through Java exercises to strengthen understanding of course material."
+          - "Graded student assignments and exams, providing constructive feedback to help them improve upon their work."
+  - company: "Wayfair"
+    location: "Boston, MA"
+    positions:
+      - title: "Software Engineering Co-op — Supply Chain Technology"
+        dates:
+          - start: "January 2023"
+            end: "August 2023"
+        description:
+          - "Contributed to Kotlin and Python services that manage warehouse automation."
+          - "Led implementation of GraphQL API for interactive tool for resolving exceptions in warehouse sortation equipment."
+          - "Verified code quality by ensuring at least 80% test coverage on all contributions."
+          - "Regularly collaborated with other teams to define and update data contracts."
+  - company: "Northeastern University"
+    location: "Boston, MA"
+    positions:
+      - title: "Teaching Assistant — Object-Oriented Design"
+        dates:
+          - start: "September 2022"
+            end: "December 2022"
+        description:
+          - "Held 4 weekly office hours to provide individualized support and assistance to students."
+          - "Facilitated weekly labs, guiding students through Java exercises to strengthen understanding of course material."
+          - "Graded student assignments and exams, providing constructive feedback to help them improve upon their work."
+      - title: "Peer Tutor"
+        dates:
+          - start: "January 2022"
+            end: "June 2022"
+        description:
+          - "Led individual and group tutoring sessions for five courses in math, computer science, and economics."
+          - "Summarized all tutoring appointments to track students' progress and identify areas for improvement."
+projects:
+  - title: "Image Processor"
+    technologies: ["Java"]
+    date: "June 2022"
+    description:
+      - "Created application for editing images using Model-View-Controller architecture"
+      - "Implemented seam carving algorithm using dynamic programming"
+      - "Validated behavior extensively through unit and integration tests with 90+% code coverage"
+  - title: "Wordle Solver"
+    technologies: ["TypeScript"]
+    date: "March 2022"
+    description:
+      - "Authored command-line tool to solve games of Wordle and two variants"
+      - "Devised greedy algorithm that can solve Wordle, Absurdle, and Survivle in both normal and hard mode"
+      - "Optimized to process all 2,000+ possible answers and 12,000+ legal guesses"
+    url: "https://github.com/thederekkaplan/wordle-solver"
+  - title: "Hoosky Bot"
+    technologies: ["TypeScript", "MongoDB"]
+    date: "August 2021"
+    description:
+      - "Collaborated with team of 9 incoming Northeastern students to develop Discord bot"
+      - "Performed code reviews and provided feedback to guarantee high-quality code"
+      - "Implemented course signup functionality, allowing students to find and contact classmates"
+      - "Deployed to university Discord server with over 2,000 members"
+    url: "https://github.com/neu25/hoosky-bot"
