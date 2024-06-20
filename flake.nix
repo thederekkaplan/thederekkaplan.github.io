@@ -26,7 +26,7 @@
             sass
             (texlive.combine {
               inherit (texlive)
-              scheme-small titlesec enumitem ulem yamlvars luapackageloader latexmk;
+              scheme-small titlesec enumitem ulem yamlvars luapackageloader latexmk cm-unicode;
             })
             lua53Packages.lyaml
           ];

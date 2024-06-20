@@ -36,4 +36,4 @@ build/%.pdf: src/%.tex src/%.lua $(YAML)
 
 .PHONY: clean
 clean:
-	rm -rf dist/* build/*
+	rm -rf dist build .sass-cache .texlive_cache
