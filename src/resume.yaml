@@ -1,5 +1,4 @@
 name: "Derek A. Kaplan"
-location: "Boston, MA"
 phone: "(814) 660-2739"
 email: "thederekkaplan@proton.me"
 linkedin: "https://www.linkedin.com/in/thederekkaplan/"
@@ -12,7 +11,6 @@ education:
       - "GPA: 3.963/4.000"
       - "Awards: University Honors Program; Dean's List (all semesters); Northeastern National Merit Scholar"
       - "Minors: Economics, Computational Social Science"
-      - "Relevant coursework: Software Development, Programming Languages, Machine Learning & Data Mining, Algorithms"
 skills:
   - category: "Programming Languages"
     skills:

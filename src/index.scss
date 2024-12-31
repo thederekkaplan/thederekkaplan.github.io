@@ -71,15 +71,13 @@ ul {
 	color: white;
 	padding: 0.5rem;
 	display: inline-block;
-	margin: 1rem 0;
 	border-radius: 0.5rem;
 }
 
 .card-footer {
 	border-top: $border;
 	background-color: $bg;
-	margin: -1rem;
-	margin-top: 0;
+	margin: 1rem -1rem -1rem;
 	padding: 0.5rem;
 }
 

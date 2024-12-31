@@ -1,0 +1,18 @@
+groups:
+  - title: "Recent from me"
+    items:
+      - title: "I don't want to live in a trustless society"
+        description: "Cryptocurrency can't solve America's crisis of trust"
+        date: "December 2024"
+        link: https://thederekkaplan.substack.com/p/crypto-trustless-society
+        linkText: "Full article"
+  - title: "Other things I'm proud of"
+    items:
+      - title: "Husky Hunt"
+        description: "Northeastern's annual 600-person scavenger hunt across the greater Boston area. I was on the committee that planned the hunt for two years."
+        link: https://huskyhunt.sites.northeastern.edu/
+        linkText: "Learn more"
+      - title: "Northeastern Campus Planning Advisory Board"
+        description: "I helped create the board that provides administration with student perspectives on campus planning and development. I then served on the board for two years."
+        link: https://www.northeasternsga.com/campus-planning-advisory-board
+        linkText: "Learn more"

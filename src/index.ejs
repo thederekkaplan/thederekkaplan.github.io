@@ -16,28 +16,27 @@
 		<p>I write code, and occasionally I do other stuff too.</p>
 		<!--Email encoded with HTML entities to fool bots-->
 		<p><a href="<%- mailto %>">Get in touch</a></p>
-		<div class="container">
-			<% for (const v of resume.projects) { %>
-				<div class="card">
-					<h3><%= v.title %></h3>
-					<p><% for (const tech of v.technologies) { %>
-						<span class="badge"><%= tech %></span>
-					<% } %></p>
-					<ul>
-						<% for (const desc of v.description) { %>
-							<li class="list-group-item"><%= desc %></li>
+		<% for (const group of website.groups) { %>
+			<br>
+			<hr>
+			<br>
+			<h1><%= group.title %></h1>
+			<div class="container">
+				<% for (const v of group.items) { %>
+					<div class="card">
+						<h3><%= v.title %></h3>
+						<p><%= v.description %></p>
+						<div class="spacer"></div>
+						<% if (v.link) { %>
+							<a href="<%- v.link %>" class="btn"><%= v.linkText %></a>
 						<% } %>
-					</ul>
-					<div class="spacer"></div>
-					<a href="<%- v.url ? v.url : mailto %>" class="btn">
-						<%= v.url ? "View code" : "Code available upon request" %>
-					</a>
-					<div class="card-footer">
-						<%= v.date %>
+						<% if (v.date) { %>
+							<div class="card-footer"><%= v.date %></div>
+						<% } %>
 					</div>
-				</div>
-			<% } %>
-		</div>
+				<% } %>
+			</div>
+		<% } %>
 	</main>
 </body>
 </html>
