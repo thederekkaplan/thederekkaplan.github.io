@@ -1,6 +1,11 @@
 groups:
   - title: "Recent from me"
     items:
+      - title: "Northeastern’s redesign of the Khoury curriculum abandons the fundamentals of computer science"
+        description: "How Khoury College plans to abandon the approach that has consistently equipped its graduates for success"
+        date: "January 2025"
+        link: https://huntnewsnu.com/82511/editorial/op-eds/op-ed-northeasterns-redesign-of-the-khoury-curriculum-abandons-the-fundamentals-of-computer-science/
+        linkText: "Full article"
       - title: "I don't want to live in a trustless society"
         description: "Cryptocurrency can't solve America's crisis of trust"
         date: "December 2024"
